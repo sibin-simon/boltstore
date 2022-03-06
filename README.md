@@ -2,21 +2,21 @@
 
 [![wercker status](https://app.wercker.com/status/752959ce0f923476671e49fb9b76ebe0/m "wercker status")](https://app.wercker.com/project/bykey/752959ce0f923476671e49fb9b76ebe0)
 [![Coverage Status](https://coveralls.io/repos/yosssi/boltstore/badge.png?branch=HEAD)](https://coveralls.io/r/yosssi/boltstore)
-[![GoDoc](http://godoc.org/github.com/yosssi/boltstore?status.png)](http://godoc.org/github.com/yosssi/boltstore)
+[![GoDoc](http://godoc.org/github.com/sibin-simon/boltstore?status.png)](http://godoc.org/github.com/sibin-simon/boltstore)
 
 ## Overview
 
-BoltStore is a session store using [Bolt](https://github.com/boltdb/bolt) which is a pure Go key/value store. You can store session data in Bolt by using this store. This store implements the [gorilla/sessions](https://github.com/gorilla/sessions) package's [Store](http://godoc.org/github.com/gorilla/sessions#Store) interface. BoltStore's APIs and examples can be seen on its [GoDoc](http://godoc.org/github.com/yosssi/boltstore) page.
+BoltStore is a session store using [Bolt](https://github.com/boltdb/bolt) which is a pure Go key/value store. You can store session data in Bolt by using this store. This store implements the [gorilla/sessions](https://github.com/gorilla/sessions) package's [Store](http://godoc.org/github.com/gorilla/sessions#Store) interface. BoltStore's APIs and examples can be seen on its [GoDoc](http://godoc.org/github.com/sibin-simon/boltstore) page.
 
 ## Installation
 
 ```go
-go get github.com/yosssi/boltstore/...
+go get github.com/sibin-simon/boltstore/...
 ```
 
 ## Example
 
-Here is a simple example using BoltStore. You can see other examples on the BoltStore's [GoDoc](http://godoc.org/github.com/yosssi/boltstore) page.
+Here is a simple example using BoltStore. You can see other examples on the BoltStore's [GoDoc](http://godoc.org/github.com/sibin-simon/boltstore) page.
 
 ```go
 package main
@@ -27,8 +27,8 @@ import (
 
 	"github.com/boltdb/bolt"
 	"github.com/gorilla/sessions"
-	"github.com/yosssi/boltstore/reaper"
-	"github.com/yosssi/boltstore/store"
+	"github.com/sibin-simon/boltstore/reaper"
+	"github.com/sibin-simon/boltstore/store"
 )
 
 var db *bolt.DB
@@ -83,4 +83,4 @@ BenchmarkStore_Save_delete	    5000	    476563 ns/op	   59576 B/op	      76 allo
 ```
 
 ## Documentation
-* [GoDoc](http://godoc.org/github.com/yosssi/boltstore)
+* [GoDoc](http://godoc.org/github.com/sibin-simon/boltstore)
